@@ -1,0 +1,153 @@
+# Printing Data
+```{r}
+"Helloworld!"
+```
+
+
+```{r}
+x<- "Hello world!"
+x
+```
+```{r}
+
+```
+# Comments In R
+```{r}
+# This is a single line comments
+# Welcome to TECH IS R Programming
+```
+## How to add multiple line comment?
+R do not have feature to add a multiline comments but there is one hack by which we can do that as well 
+```{r}
+if(FALSE) {
+   "This is a demo for multi-line comments and it must be put inside a quote (single quote or double quote"
+}
+
+s <- "R comments"
+print ( s)
+
+```
+# Variable in R
+
+data entities that takes a value
+```{r}
+# bind number 9 to variable 'x'
+x <- 9 # the value of 7 is assigned to x 
+
+# print value of 'x'
+x
+```
+```{r}
+pi<- 3.14
+pi
+```
+
+# Python Variable Naming Convention (Industry Standard)
+
+A variable provides us with named storage that our programs can manipulate. A variable in R can store an atomic vector, group of atomic vectors or a combination of many R objects. A valid variable name consists of letters, numbers and the dot or underline characters. The variable name starts with a letter or the dot not followed by a number.
+
+variable names cannot begin with a number but numbers can be a part of the variable name later
+
+Can start with a dot(.) but the dot(.)should not be followed by a number.
+
+it should not Has the character '%'. Only dot(.) and underscore allowed.
+
+
+eg: names like: va923, f8_9, .val, tmp; are allowed
+
+eg: names like: 9va23, #app4r_, f8-9, tm*p; _val, .93val are NOT allowed
+
+# Excercise : 1
+Create a variable as called age and add your age to it
+
+# Simple Program
+### input: uses the input command
+###  output: used the print command
+In R, there are a series of functions that can be used to request an input from the user, including readline(), cat(), and scan(). But, the readline() function is the most optimal function for this task.
+
+```{r}
+name <- readline('What is your name? ')
+```
+
+```{r}
+print(paste('Welcome to the world of R,', name ))
+```
+# Excercise : 4
+
+Create two inputs with one taking the name and the other taking the age 
+
+And then print out Hey <name> I am glad you started learning R at the age of <age>
+
+# Data Types in R
+
+a particular kind of data entity, defined by the values it can take
+
+R has several built-in data types, some of them are:
+
+Vectors
+
+List
+
+Matrices
+
+Arrays
+
+Factors
+
+Data Frames
+
+
+the class() function is used to check the data type of something in Python
+
+
+
+**Numeric Data Types**
+Decimal values are called numerics in R. It is the default data type for numbers in R. If you assign a decimal value to a variable N as follows, N will be of numeric type.
+```{r}
+N = 5.6
+ 
+# print the class name of variable
+print(class(N))
+ 
+# print the type of variable
+print(typeof(N))
+```
+
+
+**Integers**
+
+You can use the capital ‘L’ notation as a suffix to denote that a particular value is of the integer data type.
+```{r}
+x <- 2L
+print(class(x))
+
+```
+
+## Logical Data type
+
+R has logical data types that take either a value of true or false. A logical value is often created via a comparison between variables. 
+
+```{r}
+x <- TRUE 
+print(class(x))
+y<- FALSE
+print(class(y))
+```
+```{r}
+x <- 10
+y <- 8
+ 
+# Comparing two values
+z <- x > y
+ 
+# print the logical value
+print(z)
+ 
+# print the class name of z
+print(class(z))
+ 
+# print the type of z
+print(typeof(z))
+```
+
+
